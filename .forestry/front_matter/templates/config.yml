@@ -73,7 +73,7 @@ fields:
     label: Contact Section Configuration
     fields:
       - type: boolean
-        name: eanbled
+        name: eanabled
         label: Enabled
         description: Displays the contact section in the site footer
         default: false
