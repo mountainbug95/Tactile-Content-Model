@@ -120,7 +120,7 @@ collections:
             required: false
             label: Contact Section Configuration
             fields:
-              - name: eanbled
+              - name: enabled
                 widget: boolean
                 required: false
                 label: Enabled
