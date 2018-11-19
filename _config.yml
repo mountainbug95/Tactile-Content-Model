@@ -1,0 +1,73 @@
+title: Tactile
+baseurl: /
+header:
+  nav_button:
+    label: Log In
+    url: generic.md
+menu:
+  actions:
+    - label: Sign Up
+      url: generic.md
+      is_scrolly: false
+      is_primary: true
+    - label: Log In
+      url: generic.md
+      is_scrolly: false
+      is_primary: false
+footer:
+  title: Magna Aliquam Feugiat
+  text: >-
+    Etiam finibus pharetra purus, imperdiet sagittis mauris hendrerit vitae. In
+    feugiat ante elementum nulla arcu. Maecenas vulputate faucibus, convallis
+    ligula ipsum dolor feugiat tempus adipiscing.
+  actions:
+    - label: Learn more
+      url: generic.md
+      is_scrolly: false
+      is_primary: false
+  copyright: '&copy; Untitled Corp. All rights reserved.'
+contact:
+  enabled: true
+  title: Get in Touch
+  contact_list:
+    - text: (000) 000-0000
+      icon: fa-phone
+    - text: information@untitled.tld
+      icon: fa-envelope
+      enable_url: true
+      url: '#'
+    - text: '@untitled-tld'
+      icon: fa-twitter
+      enable_url: true
+      url: '#'
+    - text: facebook.com/untitled
+      icon: fa-facebook
+      enable_url: true
+      url: '#'
+  address:
+    enabled: true
+    text: |-
+      Untitled Corp
+      1234 Fictional Road
+      Suite 5432
+      Nashville, TN 00000
+      USA
+    icon: fa-home
+palette: cyan
+palettes:
+  cyan:
+    sass:
+      color: '#72c9d4'
+  green:
+    sass:
+      color: '#76C8B7'
+  orange:
+    sass:
+      color: '#ef7f5b'
+sass:
+  indentWidth: 4
+  style: nested
+  precision: 10
+plugins:
+  - jekyll-menus
+permalink: '/posts/:slug:output_ext'

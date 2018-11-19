@@ -1,0 +1,22 @@
+---
+layout: body
+---
+
+    <!-- Main -->
+    <article id="main">
+        <header>
+            <h2 class="major special">{{ page.title }}</h2>
+            {{ page.subtitle | markdownify }}
+        </header>
+        <section class="wrapper">
+            <div class="inner">
+                {% if page.content_heading %}
+                    <h3>{{ page.content_heading }}</h3>
+                {% endif %}
+                {% if page.content_img.enabled %}
+                    <span class="image {{ page.content_img.location }}"><img src="{{ page.content_img.path | relative_url }}" alt="" /></span>
+                {% endif %}
+                {{ content }}
+            </div>
+        </section>
+    </article>

@@ -1,0 +1,60 @@
+---
+label: Spotlights Section
+hide_body: true
+is_partial: true
+display_field: title
+fields:
+  - type: select
+    name: background_style
+    label: Section Background Style
+    description: Controls the background color of the section
+    config:
+      source:
+        type: custom
+      options:
+        - style1
+        - style2
+  - type: text
+    name: section_id
+    label: Section ID
+    default: two
+    config:
+      required: true
+  - type: field_group_list
+    name: spotlights_list
+    label: Spotlights
+    description: A list of spotlights to be displayed in the section
+    config:
+      labelField: title
+    fields:
+      - type: text
+        name: title
+        label: Spotlight Title
+        description: The title displayed at the top of the spotlight
+        config:
+          required: true
+      - type: textarea
+        name: text
+        label: Spotlight Text
+        description: The text displayed below the spotlight title
+        config:
+          wysiwyg: true
+          schema:
+            format: markdown
+      - type: file
+        name: home_img
+        label: Spotlight Image
+        description: The image displayed beside the spotlight text
+  - type: text
+    name: identifier
+    label: Identifier
+    description: Used to identify the section (Only used by the CMS)
+    default: spotlights
+    config:
+      required: true
+  - type: text
+    name: component
+    hidden: true
+    default: spotlights.html
+    config:
+      required: true

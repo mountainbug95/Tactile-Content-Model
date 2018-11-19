@@ -1,0 +1,18 @@
+<!-- One -->
+<section id="{{ include.section.section_id }}" class="wrapper alt {{ include.section.background_style }}">
+    <ul class="features">
+        {% assign arr = include.site.pages | where_exp: 'item', 'item.features_section.enabled == true' | sort: 'features_section.weight' %}
+        {% for features_page in arr %}
+            <li>
+                <div class="content">
+                    <span class="icon major {{ features_page.features_section.icon }}"></span>
+                    <h3 class="major">{{ features_page.title }}</h3>
+                    {{ features_page.features_section.excerpt | markdownify }}
+                    <ul class="actions">
+                        <li><a href="{{ features_page.url | relative_url }}" class="button">Details</a></li>
+                    </ul>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</section>

@@ -1,0 +1,14 @@
+<!-- Three -->
+<section id="{{ include.section.section_id }}" class="wrapper {{ include.section.background_style }} special">
+    <div class="inner narrow">
+        <h3 class="major special">{{ include.section.title }}</h3>
+        {{ include.section.subtitle | markdownify }}
+        {% if include.section.actions %}
+            <ul class="actions special">
+                {% for action in include.section.actions %}
+                    <li><a href="{% assign expr_1 = action.url | starts_with: '#' %}{% if expr_1 %}{{ action.url }}{% else %}{{ action.url | link | relative_url }}{% endif %}" class="button{% if action.is_primary %} primary{% endif %}{% if action.is_scrolly %} scrolly{% endif %} large">{{ action.label }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</section>

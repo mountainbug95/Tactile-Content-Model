@@ -1,0 +1,32 @@
+---
+label: Section
+hide_body: true
+is_partial: true
+display_field: title
+fields:
+  - type: select
+    name: background_style
+    label: Section Background Style
+    description: Controls the background color of the section
+    config:
+      source:
+        type: custom
+      options:
+        - style1
+        - style2
+  - type: text
+    name: section_id
+    label: Section ID
+    config:
+      required: true
+  - type: text
+    name: identifier
+    label: Identifier
+    description: Used to identify the section (Only used by the CMS)
+    config:
+      required: true
+  - type: text
+    name: component
+    hidden: true
+    config:
+      required: true

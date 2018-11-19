@@ -1,0 +1,14 @@
+<!-- Two -->
+<section id="{{ include.section.section_id }}" class="wrapper alt {{ include.section.background_style }}">
+    {% for spotlight in include.section.spotlights_list %}
+        <section class="spotlight">
+            {% if spotlight.home_img %}
+                <div class="image"><img src="{{ spotlight.home_img | relative_url }}" alt="" /></div>
+            {% endif %}
+            <div class="content">
+                <h3 class="major">{{ spotlight.title }}</h3>
+                {{ spotlight.text | markdownify }}
+            </div>
+        </section>
+    {% endfor %}
+</section>

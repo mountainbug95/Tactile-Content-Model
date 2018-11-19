@@ -1,0 +1,8 @@
+<!-- Header -->
+<header id="header">
+    <h1><a href="{{ site.baseurl | relative_url }}">{{ site.title }}</a></h1>
+    {% if site.header.nav_button %}
+        <a href="{% assign expr_1 = site.header.nav_button.url | starts_with: '#' %}{% if expr_1 %}{{ site.header.nav_button.url }}{% else %}{{ site.header.nav_button.url | link | relative_url }}{% endif %}">{{ site.header.nav_button.label }}</a>
+    {% endif %}
+    <a href="#menu">Menu</a>
+</header>

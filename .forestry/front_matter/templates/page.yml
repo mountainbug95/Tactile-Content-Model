@@ -1,0 +1,87 @@
+---
+label: Page
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Page Title
+    description: The title displayed in the banner at the top of the page
+    config:
+      required: true
+  - type: textarea
+    name: subtitle
+    label: Page Subtitle
+    description: >-
+      The text displayed below the page title in the banner at the top of the
+      page
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: text
+    name: content_heading
+    label: Content Header
+    description: The text displayed at the top of the page content section
+  - type: field_group
+    name: content_img
+    label: Content Image
+    description: The image displayed in the content section of the page
+    fields:
+      - type: boolean
+        name: enabled
+        label: Enabled
+        description: Displays the image in the page content section
+        default: false
+      - type: file
+        name: path
+        label: Image
+      - type: select
+        name: location
+        label: Image Position
+        description: The side of the content the image is to be displayed on
+        default: left
+        config:
+          source:
+            type: custom
+          options:
+            - left
+            - right
+  - type: field_group
+    name: features_section
+    label: Features Section
+    description: The information displayed in the home features section
+    fields:
+      - type: boolean
+        name: enabled
+        label: Enabled
+        description: Displays the page in the home features section
+        default: false
+      - type: number
+        name: weight
+        label: Features Section Weight
+        description: The index of the page in the home features section
+      - type: text
+        name: icon
+        label: Icon
+        description: (Font Awesome icon) The icon displayed in the home features section
+      - type: textarea
+        name: excerpt
+        label: Features Section Excerpt
+        description: The excerpt displayed in the home features section
+        config:
+          wysiwyg: true
+          schema:
+            format: markdown
+  - type: text
+    name: layout
+    label: Layout
+    hidden: true
+    default: page
+    config:
+      required: true
+pages:
+  - elementum.md
+  - generic.md
+  - lorem.md
+  - sed.md
+  - volutpat.md
