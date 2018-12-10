@@ -17,6 +17,7 @@ sections:
     section_id: one
     identifier: features
     component: features.html
+    template: features
   - background_style: ''
     section_id: two
     spotlights_list:
@@ -43,6 +44,7 @@ sections:
         home_img: images/pic03.jpg
     identifier: spotlights
     component: spotlights.html
+    template: spotlights
   - title: Sed Lacus Bibendum
     subtitle: >-
       Sagittis mauris hendrerit vitae feugiat etiam ante elementum vulputate
@@ -56,6 +58,7 @@ sections:
         is_primary: true
     identifier: cta
     component: cta.html
+    template: cta
 menus:
   main:
     title: Home
