@@ -18,9 +18,9 @@
                 {% if site.contact.contact_list %}
                     <ul class="contact">
                         {% for item in site.contact.contact_list %}
-                            {% if item.enable_url %}
+                            {% if item.type == 'contact_with_link' %}
                                 <li class="{{ item.icon }}"><a href="{{ item.url }}">{{ item.text }}</a></li>
-                            {% else %}
+                            {% elsif item.type == 'contact_no_link' %}
                                 <li class="{{ item.icon }}">{{ item.text }}</li>
                             {% endif %}
                         {% endfor %}

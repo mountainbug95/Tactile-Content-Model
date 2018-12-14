@@ -192,6 +192,7 @@ collections:
           - name: palettes
             widget: hidden
             required: false
+            label: Palettes
   - name: home
     label: Home
     files:
@@ -278,6 +279,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: features.html
               - name: spotlights
                 widget: object
@@ -326,6 +328,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: spotlights.html
               - name: cta
                 widget: object
@@ -392,6 +395,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: cta.html
           - name: layout
             widget: hidden

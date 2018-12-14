@@ -13,12 +13,13 @@ banner:
       is_scrolly: true
       is_primary: false
 sections:
-  - background_style: style2
+  - title: Features Section
+    background_style: style2
     section_id: one
-    identifier: features
     component: features.html
     template: features
-  - background_style: ''
+  - title: Spotlights Section
+    background_style: ''
     section_id: two
     spotlights_list:
       - title: Pharetra Turpis
@@ -42,7 +43,6 @@ sections:
           faucibus, convallis ante et, bibendum ligula. Integer porttitor lacus
           eu diam pretium, ac purus rutrum.
         home_img: images/pic03.jpg
-    identifier: spotlights
     component: spotlights.html
     template: spotlights
   - title: Sed Lacus Bibendum
@@ -56,7 +56,6 @@ sections:
         url: generic.md
         is_scrolly: false
         is_primary: true
-    identifier: cta
     component: cta.html
     template: cta
 menus:

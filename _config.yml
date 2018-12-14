@@ -32,18 +32,19 @@ contact:
   contact_list:
     - text: (000) 000-0000
       icon: fa-phone
+      type: contact_no_link
     - text: information@untitled.tld
       icon: fa-envelope
-      enable_url: true
       url: '#'
+      type: contact_with_link
     - text: '@untitled-tld'
       icon: fa-twitter
-      enable_url: true
       url: '#'
+      type: contact_with_link
     - text: facebook.com/untitled
       icon: fa-facebook
-      enable_url: true
       url: '#'
+      type: contact_with_link
   address:
     enabled: true
     text: |-
